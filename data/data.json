@@ -1,0 +1,26 @@
+{
+    "dropdown": {
+      "option_to_select": "Option 2"
+    },
+    "checkboxes": {
+      "first_checkbox": "checked",
+      "second_checkbox": "unchecked"
+    },
+    "radio_buttons": {
+      "gender": "Male",
+      "age_group": "15 - 50"
+    },
+    "form": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "address": "123 Elm Street",
+      "city": "Anytown",
+      "state": "California",
+      "zip": "12345",
+      "website": "http://example.com",
+      "hosting": "Yes",
+      "project_description": "This is a test project."
+    }
+  }
