@@ -7,7 +7,7 @@ class HeroCheckPage:
     def __init__(self, driver):
         self.driver = driver        
             
-    def click_check_1(self, wait):
+    def __find_checkb(self, wait):
         # Click on first checkbox
         try:
             checkB = wait.until(
@@ -16,14 +16,28 @@ class HeroCheckPage:
         except exceptions.TimeoutException as e:
             print('{0} >> {1}'.format('hero_checkbox', e))
 
+        return checkB
+        
+    def click_check_1(self, wait):
+        
+        checkB = self.__find_checkb(wait)
+
         # Check whether first checkbox is unchecked and check it
         if not checkB[0].is_selected():
             checkB[0].click()
         else:
             pass
         
-        # Check whether second checkbox is checked and uncheck it
-        if checkB[1].is_selected():
+        return checkB[0].is_selected()
+    
+    def click_check_2(self, wait):
+
+        checkB = self.__find_checkb(wait)
+
+        # Check whether first checkbox is unchecked and check it
+        if not checkB[1].is_selected():
             checkB[1].click()
         else:
             pass
+        
+        return checkB[1].is_selected()

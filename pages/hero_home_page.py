@@ -12,3 +12,4 @@ class HeroHomePage:
     def open_checkboxes(self):
         # Open "Dropdown" page
         self.driver.find_element(By.CSS_SELECTOR, "a[href='/checkboxes']").click()
+        
