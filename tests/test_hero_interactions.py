@@ -4,13 +4,13 @@ from pages.hero_home_page import HeroHomePage
 from pages.hero_checkbox_page import HeroCheckPage
 
 
-def test_interactions(_browser):
+def test_hero_interactions(_browser):
     
-    URL_hero = "https://the-internet.herokuapp.com/"
+    URL = "https://the-internet.herokuapp.com/"
     wait = WebDriverWait(_browser, 10)
 
     _browser.maximize_window()
-    _browser.get(URL_hero)
+    _browser.get(URL)
     
     # Initializations
     hero_home_page = HeroHomePage(_browser)
