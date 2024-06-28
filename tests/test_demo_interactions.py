@@ -22,9 +22,7 @@ def test_demo_interactions(_browser):
     demo_elem_page.open_radio(wait)
     
     demo_radio_page.click_radio(wait, "YeS")
-    
     assert demo_radio_page.get_radio_status(wait, "yes") is True
 
     demo_radio_page.click_radio(wait, "impressive")
-
     assert demo_radio_page.get_radio_status(wait, "impressive") is True
