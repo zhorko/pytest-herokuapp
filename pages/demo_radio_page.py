@@ -50,3 +50,7 @@ class DemoRadioPage:
         else:
             # Return radio button status        
             return self.__find_radio(wait, radio_text).is_selected()
+        
+    def get_home(self):
+        # return to home page
+        self.driver.find_element(By.CSS_SELECTOR, "#app a").click()

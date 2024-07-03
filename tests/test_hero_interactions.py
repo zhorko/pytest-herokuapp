@@ -20,3 +20,5 @@ def test_hero_interactions(_browser):
 
     assert hero_check_page.click_check_1(wait) is True
     assert hero_check_page.click_check_2(wait) is True
+
+    
