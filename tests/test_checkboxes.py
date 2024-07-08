@@ -4,7 +4,7 @@ from pages.hero_home_page import HeroHomePage
 from pages.hero_checkbox_page import HeroCheckPage
 
 
-def test_hero_interactions(_browser):
+def test_checkboxes(_browser):
     
     URL = "https://the-internet.herokuapp.com/"
     wait = WebDriverWait(_browser, 10)
@@ -21,4 +21,3 @@ def test_hero_interactions(_browser):
     assert hero_check_page.click_check_1(wait) is True
     assert hero_check_page.click_check_2(wait) is True
 
-    
